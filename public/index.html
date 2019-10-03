@@ -24,10 +24,34 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+<!--  Begin Link Added for bootstrap-->
+    <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous"
+    />
+
+<!--End Link Added for Bootstrap    -->
+    <title>SARA</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+<!--    <noscript>You need to enable JavaScript to run this app.</noscript>-->
+<!--Begin Scripts added for bootstrap-->
+<script src="https://unpkg.com/react/umd/react.production.min.js" crossorigin />
+
+<script
+        src="https://unpkg.com/react-dom/umd/react-dom.production.min.js"
+        crossorigin
+/>
+
+<script
+        src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js"
+        crossorigin
+/>
+<!--End Scripts added for bootstrap-->
+
+<script>var Alert = ReactBootstrap.Alert;</script>
     <div id="root"></div>
     <!--
       This HTML file is a template.
