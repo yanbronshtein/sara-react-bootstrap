@@ -2,8 +2,8 @@ import React from 'react'
 // import Mailto from 'react-mailto'
 import '../App.css'
 import 'bootstrap/dist/css/bootstrap.min.css' //Added line for bootstrap stylesheets
-import Mailto from 'react-protected-mailto'
-import MailDeveloper from "./MailDeveloper";
+// import Mailto from 'react-protected-mailto'
+// import MailDeveloper from "./MailDeveloper";
 import { NavDropdown } from 'react-bootstrap'
 
 const About = (props) => {
@@ -23,17 +23,17 @@ const About = (props) => {
 };
 
 
-export default () => (
-    <p>
-        Phone: <Mailto tel='205-454-1234' /><br />
-        Email: <Mailto
-        email='hello@coston.cool'
-        headers={
-            {subject:'Question from the website'},
-        {cc:'friend@coston.cool'}
-        }/>
-    </p>
-)
+// export default () => (
+//     <p>
+//         Phone: <Mailto tel='205-454-1234' /><br />
+//         Email: <Mailto
+//         email='hello@coston.cool'
+//         headers={
+//             {subject:'Question from the website'},
+//         {cc:'friend@coston.cool'}
+//         }/>
+//     </p>
+// )
 // const mailDeveloper = () => (
 //     <p>
 //         Phone: <Mailto tel='205-454-1234' /><br />
