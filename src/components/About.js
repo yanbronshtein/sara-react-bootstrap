@@ -6,7 +6,7 @@ import { NavDropdown } from 'react-bootstrap'
 
 const About = (props) => {
     let developerContent = "\t Yaniv Bronshtein is an aspiring Software Engineer.\n "
-        + "He likes to play tennis. He does not like front end development yet but through blood, sweat, and tears will";
+        + "He likes to play tennis.\n He does not like Front End Development...\nYet\n But through\n Blood\n Sweat\n And \nTears\n Will";
 
     return (
         <div>

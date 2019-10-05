@@ -2,44 +2,49 @@
   text-align: center;
   background-color: blueviolet;
   font-family: AppleGothic, cursive;
-  font-size: 15px;
 }
 
 .App-header {
-  background-color: gold;
+  background-color: white;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
-h1 {
+h3 {
   padding: 7px;
-  color: lavenderblush;
+  color: blue;
   white-space: pre-line;
   text-align: center;
   margin: 7px;
+  font-family: AppleGothic, cursive;
 }
 
-h1 a {
+h3 a {
   color: silver;
   white-space: pre-line;
   text-align: center;
   border-style: wave;
   border-radius: 20px;
   padding: 5px;
+  /*font-size: 15px;*/
+
 }
 
 #content-container{
   text-align: center;
-  background-color: brown;
-  font-size: 15px;
+  background-color: white;
+  /*font-size: 15px;*/
 }
 
 img {
-  width: 150px;
-  height: auto;
+  /*width: auto;*/
+  /*height: auto;*/
+  max-width: 500px;
+  max-height: 500px;
+
   text-align: center;
 
   margin-top: 130px;
-  justify-content: center;
+  /*justify-content: center;*/
 }
