@@ -21,40 +21,5 @@ const About = (props) => {
 };
 
 
-// export default () => (
-//     <p>
-//         Phone: <Mailto tel='205-454-1234' /><br />
-//         Email: <Mailto
-//         email='hello@coston.cool'
-//         headers={
-//             {subject:'Question from the website'},
-//         {cc:'friend@coston.cool'}
-//         }/>
-//     </p>
-// )
-// const mailDeveloper = () => (
-//     <p>
-//         Phone: <Mailto tel='205-454-1234' /><br />
-//         Email: <Mailto
-//         email='hello@coston.cool'
-//
-//         />
-//     </p>
-// );
-// const mailDeveloper = () => {
-//     var React  = require('react');
-//     var Mailto = require('react-mailto');
-//
-//     var Component = React.createClass({
-//         render: function () {
-//             return (
-//                 <Mailto email="j@sonbellamy.com" obfuscate={true}>
-//                     Email me!
-//                 </Mailto>
-//             );
-//         }
-//     });
-//
-// };
-//
+
 export default About;
