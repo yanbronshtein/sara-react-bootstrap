@@ -14,7 +14,7 @@ const About = (props) => {
         <div>
             <NavDropdown title="About" id="about-dropdown">
                 <NavDropdown.Item onClick={()=> props.onClick(developerContent)}>Developers</NavDropdown.Item>
-                <NavDropdown.Item onClick={()=>MailDeveloper}>Contact Us</NavDropdown.Item>
+                {/*<NavDropdown.Item onClick={()=>MailDeveloper}>Contact Us</NavDropdown.Item>*/}
 
             </NavDropdown>
         </div>
