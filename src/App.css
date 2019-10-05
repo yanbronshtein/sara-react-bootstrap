@@ -12,7 +12,7 @@
   flex-direction: column;
 }
 
-h2 {
+h1 {
   padding: 7px;
   color: lavenderblush;
   white-space: pre-line;
@@ -20,12 +20,11 @@ h2 {
   margin: 7px;
 }
 
-h2 a {
+h1 a {
   color: silver;
   white-space: pre-line;
   text-align: center;
-  /*border-style: wave;*/
-  border: 6px solid blanchedalmond;
+  border-style: wave;
   border-radius: 20px;
   padding: 5px;
 }
@@ -33,6 +32,7 @@ h2 a {
 #content-container{
   text-align: center;
   background-color: brown;
+  font-size: 15px;
 }
 
 img {

@@ -74,8 +74,8 @@ class App extends React.Component {
                     <div id="content-container">
                         <div>
 
-                            <h2>{this.state.content}</h2>
-                            <h2>{this.state.email ? <a href="mailto:aimeedu11@gmail.com?subject=Harass your Developer"  rel="noopener noreferrer" target="_blank">Contact Us</a> : null }</h2>
+                            <h1>{this.state.content}</h1>
+                            <h1>{this.state.email ? <a href="mailto:yanbron96@gmail.com?subject=Harass your Developer"  rel="noopener noreferrer" target="_blank">Contact Us</a> : null }</h1>
 
 
                         </div>
