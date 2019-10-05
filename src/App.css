@@ -1,10 +1,12 @@
 .App {
   text-align: center;
-  background-color: darkseagreen;
+  background-color: blueviolet;
+  font-family: AppleGothic, cursive;
+  font-size: 15px;
 }
 
 .App-header {
-  background-color: darkseagreen;
+  background-color: gold;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -19,19 +21,18 @@ h2 {
 }
 
 h2 a {
-  padding: 0px;
-  color: mediumpurple;
+  color: silver;
   white-space: pre-line;
   text-align: center;
   /*border-style: wave;*/
-  border: 6px solid mediumpurple;
+  border: 6px solid blanchedalmond;
   border-radius: 20px;
   padding: 5px;
 }
 
 #content-container{
   text-align: center;
-  background-color: darkseagreen;
+  background-color: brown;
 }
 
 img {
@@ -40,5 +41,5 @@ img {
   text-align: center;
 
   margin-top: 130px;
-  justifyContent: 'center',
+  justify-content: center;
 }

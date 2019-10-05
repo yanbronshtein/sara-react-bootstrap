@@ -1,4 +1,4 @@
-import { Form, Navbar, Nav, Button, FormControl } from 'react-bootstrap'
+import { Navbar, Nav } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import React from 'react';
@@ -14,8 +14,7 @@ class App extends React.Component {
     constructor(props){
         super(props);
         this.state = {
-            content: "This is my home page for CS 355",
-            img: false,
+            content: "Introducing SARA, your favorite Search And Reporting Application!",
             email: false,
         }
     }
@@ -23,7 +22,6 @@ class App extends React.Component {
     handleClick = (i)=>{
         this.setState({
             content: i,
-            img: false,
             email: false,
         })
     };
@@ -31,7 +29,6 @@ class App extends React.Component {
     handleImgEmail = (j)=>{
         this.setState({
             content: j,
-            img: true,
             email: true,
         })
     };
@@ -39,7 +36,6 @@ class App extends React.Component {
     handleImg = (x)=>{
         this.setState({
             content: x,
-            img: true,
             email: false,
         })
     };
@@ -63,7 +59,7 @@ class App extends React.Component {
 
                                 <Nav.Link onClick={()=>{
                                     this.setState({
-                                        content: "This is my home page for CS 355",
+                                        content: "Welcome home to SARA, your favorite Search And Reporting Application!",
                                     })}}>Home</Nav.Link>
 
                                 <Course />
@@ -72,10 +68,6 @@ class App extends React.Component {
                                 <About onClick2={(j)=>this.handleImgEmail(j)} onClick={(x)=>this.handleImg(x)}/>
 
                             </Nav>
-                            <Form inline>
-                                <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-                                <Button variant="outline-success">Search</Button>
-                            </Form>
                         </Navbar.Collapse>
                     </Navbar>
 
@@ -83,7 +75,7 @@ class App extends React.Component {
                         <div>
 
                             <h2>{this.state.content}</h2>
-                            <h2>{this.state.email ? <a href="mailto:aimeedu11@gmail.com?subject=Contact Developer"target="_blank">Contact Us</a> : null }</h2>
+                            <h2>{this.state.email ? <a href="mailto:aimeedu11@gmail.com?subject=Harass your Developer"  rel="noopener noreferrer" target="_blank">Contact Us</a> : null }</h2>
 
 
                         </div>
