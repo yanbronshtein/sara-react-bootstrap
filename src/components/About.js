@@ -11,13 +11,11 @@ const About = (props) => {
     return (
         <div>
             <NavDropdown title="About" id="about-dropdown">
-                <NavDropdown.Item onClick={()=> props.onClick(developerContent)}>Developers</NavDropdown.Item>
+                <NavDropdown.Item onClick={()=>props.onClick("Yaniv Bronshtein is an aspiring Software Engineer.")}>Developers</NavDropdown.Item>
                 <NavDropdown.Item onClick={()=>props.onClick2()}>Contact Us</NavDropdown.Item>
-
             </NavDropdown>
         </div>
     )
-
 };
 
 

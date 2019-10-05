@@ -1,91 +1,101 @@
-import React,{Component} from 'react'
-import {Button, Container, Form, FormControl, Nav, Navbar, NavDropdown} from 'react-bootstrap'
-import logo from './logo.svg'
-import './App.css'
-import 'bootstrap/dist/css/bootstrap.min.css'
-import About from "./components/About"
-import Browser from "./components/Browser"
-import Search from "./components/Search"
-import Course from "./components/Course" //Added line for bootstrap stylesheets
+import { Form, Navbar, Nav, Button, FormControl } from 'react-bootstrap'
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+import React from 'react';
+import './App.css';
+import Course from "./components/Course";
+import Search from "./components/Search";
+import Browser from "./components/Browser";
+import About from "./components/About";
+
+
 class App extends React.Component {
 
-    constructor(props) {
+    constructor(props){
         super(props);
         this.state = {
-            // content: "Welcome to SARA",
-            content: "",
-            image: false,
-            email: false
+            content: "This is my home page for CS 355",
+            img: false,
+            email: false,
         }
-
     }
 
-    /**Just content but no images */
-    handleClick = (i) => {
+    handleClick = (i)=>{
         this.setState({
-            content:i,
-            image: false,
+            content: i,
+            img: false,
             email: false,
         })
     };
 
-    handleEmailDisplay = (j)=>{
+    handleImgEmail = (j)=>{
         this.setState({
             content: j,
-            image: true,
+            img: true,
             email: true,
         })
     };
 
-    handleImageDisplay = (x)=>{
+    handleImg = (x)=>{
         this.setState({
             content: x,
-            image: true,
+            img: true,
             email: false,
         })
     };
 
+
     render() {
 
         return (
+
             <div className="App">
+
+
                 <header className="App-header">
-                    <Container>
-                        <Navbar bg="light" expand="lg">
-                            <Navbar.Brand href="#home">SARA</Navbar.Brand>
-                            <Navbar.Toggle aria-controls="basic-navbar-nav"/>
-                            <Navbar.Collapse id="basic-navbar-nav">
-                                <Nav className="mr-auto">
-                                    <Nav.Link href="#home">Home</Nav.Link>
-                                    <Course/>
-                                    <Search onClick={(i)=>this.handleClick(i)}/>
-                                    <Browser onClick={(i) => {this.handleClick(i)}}/>
-                                    <About onClick2={(j)=>this.handleEmailDisplay(j)} onClick={(x)=>this.handleImageDisplay(x)}/>
-                                </Nav>
-                                {/*<Form inline>*/}
-                                {/*    <FormControl type="text" placeholder="Search" className="ml-sm-2" />*/}
-                                {/*    <Button variant="outline-success">Search</Button>*/}
-                                {/*</Form>*/}
-                            </Navbar.Collapse>
-                        </Navbar>
-                    </Container>
-                    <h1>{this.state.content}</h1>
+
+
+                    <Navbar collapseOnSelect="true" bg="light" variant="light" expand="lg">
+                        <Navbar.Brand href="#home">CS355</Navbar.Brand>
+                        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                        <Navbar.Collapse id="basic-navbar-nav">
+                            <Nav className="mr-auto">
+
+                                <Nav.Link onClick={()=>{
+                                    this.setState({
+                                        content: "This is my home page for CS 355",
+                                    })}}>Home</Nav.Link>
+
+                                <Course />
+                                <Search onClick={(i)=>this.handleClick(i)}/>
+                                <Browser onClick={(i)=>this.handleClick(i)}/>
+                                <About onClick2={(j)=>this.handleImgEmail(j)} onClick={(x)=>this.handleImg(x)}/>
+
+                            </Nav>
+                            <Form inline>
+                                <FormControl type="text" placeholder="Search" className="mr-sm-2" />
+                                <Button variant="outline-success">Search</Button>
+                            </Form>
+                        </Navbar.Collapse>
+                    </Navbar>
+
                     <div id="content-container">
                         <div>
-                            {/*<h2>{this.state.content}</h2>*/}
-                            <h2>{this.state.email ? <a href="mailto:yanbron96@gmail.com?subject=Contact Developer" target="_blank">Contact Us</a> : null }</h2>
+
+                            <h2>{this.state.content}</h2>
+                            <h2>{this.state.email ? <a href="mailto:aimeedu11@gmail.com?subject=Contact Developer"target="_blank">Contact Us</a> : null }</h2>
 
 
                         </div>
                     </div>
+
                 </header>
             </div>
+
+
         );
     }
-
-
 }
-
 
 
 export default App;

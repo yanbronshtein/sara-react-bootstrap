@@ -56,10 +56,4 @@ function displayLocationInfo(position) {
     geoLocationContent = "GeoLocation longitude: " + position.coords.longitude
     + "GeoLocation latitude: "+ position.coords.latitude;
 }
-
-
-
-
-
-
 export default Browser

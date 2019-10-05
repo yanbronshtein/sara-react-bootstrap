@@ -4,7 +4,6 @@ import 'bootstrap/dist/css/bootstrap.min.css' //Added line for bootstrap stylesh
 
 import { NavDropdown } from 'react-bootstrap';
 const Search = (props) => {
-
     return (
         <div>
             <NavDropdown title="Search" id="search-dropdown">
@@ -14,16 +13,7 @@ const Search = (props) => {
                 <NavDropdown.Item href="#">My Search Engine</NavDropdown.Item>
             </NavDropdown>
         </div>
-
-
     )
-
-
-
-
-
 };
-
-
 
 export default Search;
